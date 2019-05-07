@@ -72,6 +72,7 @@
     <Compile Include="Abstract\IFilmRepository.cs" />
     <Compile Include="Concrete\EFDbContext.cs" />
     <Compile Include="Concrete\EFFilmRepository.cs" />
+    <Compile Include="Entities\Cart.cs" />
     <Compile Include="Entities\Film.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
