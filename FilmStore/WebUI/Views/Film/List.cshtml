@@ -1,5 +1,6 @@
 ﻿@using WebUI.Models;
 @using Domain.Entities;
+@using WebUI.HtmlHelpers;
 @model FilmListViewModel
 
 @{
@@ -8,13 +9,9 @@
 
 @foreach (Film film in @Model.Films)
 {
-    <div>
-        <h3>@film.Name</h3>
-        <p>@film.Description</p>
-        <h4>@film.Price.ToString("# руб")</h4>
-    </div> 
+    @Html.Partial("FilmSummary", film)
 }
 
-<div>
-    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
-</div>
+    <div class="btn-group pull-right">
+        @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
+    </div>
