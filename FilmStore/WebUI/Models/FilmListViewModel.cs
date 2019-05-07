@@ -10,5 +10,7 @@ namespace WebUI.Models
     {
         public IEnumerable<Film> Films { get; set; }
         public PagingInfo PagingInfo { get; set; }
+
+        public string CurrentGenre { get; set; }
     }
 }
