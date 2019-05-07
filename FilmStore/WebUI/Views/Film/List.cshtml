@@ -1,11 +1,12 @@
-﻿@using Domain.Entities;
-@model IEnumerable<Film>
+﻿@using WebUI.Models;
+@using Domain.Entities;
+@model FilmListViewModel
 
 @{
     ViewBag.Title = "Фильмы";
 }
 
-@foreach (Film film in @Model)
+@foreach (Film film in @Model.Films)
 {
     <div>
         <h3>@film.Name</h3>
@@ -13,3 +14,7 @@
         <h4>@film.Price.ToString("# руб")</h4>
     </div> 
 }
+
+<div>
+    @Html.PageLinks(Model.PagingInfo, x => Url.Action("List", new { page = x }))
+</div>

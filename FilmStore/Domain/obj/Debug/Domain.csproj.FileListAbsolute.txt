@@ -22,3 +22,4 @@ C:\Users\Александр\source\repos\FilmStore\Domain\bin\Debug\EntityFramew
 C:\Users\Александр\source\repos\FilmStore\Domain\bin\Debug\EntityFramework.SqlServer.dll
 C:\Users\Александр\source\repos\FilmStore\Domain\bin\Debug\EntityFramework.xml
 C:\Users\Александр\source\repos\FilmStore\Domain\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Александр\source\repos\FilmStore\Domain\obj\Debug\Domain.csprojAssemblyReference.cache
