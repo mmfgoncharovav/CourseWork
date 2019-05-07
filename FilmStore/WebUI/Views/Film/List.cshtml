@@ -1,0 +1,15 @@
+﻿@using Domain.Entities;
+@model IEnumerable<Film>
+
+@{
+    ViewBag.Title = "Фильмы";
+}
+
+@foreach (Film film in @Model)
+{
+    <div>
+        <h3>@film.Name</h3>
+        <p>@film.Description</p>
+        <h4>@film.Price.ToString("# руб")</h4>
+    </div> 
+}
