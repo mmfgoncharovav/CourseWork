@@ -1,0 +1,18 @@
+﻿@using WebUI.Models;
+@using Domain.Entities;
+@using WebUI.HtmlHelpers;
+@model FilmListViewModel
+
+@{
+    ViewBag.Title = "Фильмы";
+}
+
+@foreach (Film film in @Model.Films)
+{
+    @Html.Partial("FilmSummary", film)
+}
+
+    <div class="btn-group pull-right">
+        @Html.PageLinks(Model.PagingInfo, x => Url.Action("List",
+        new { page = x, genre = Model.CurrentGenre }))
+    </div>
