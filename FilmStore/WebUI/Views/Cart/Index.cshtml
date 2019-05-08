@@ -1,11 +1,14 @@
 ﻿@model WebUI.Models.CartIndexViewModel
+    <style>
+        #cartTable td { vertical-align: middle; }
+    </style>
 
 @{
     ViewBag.Title = "GameStore: ваша корзина";
 }
 
 <h2>Ваша корзина</h2>
-<table class="table">
+<table id="cartTable" class="table">
     <thead>
         <tr>
             <th>Кол-во</th>
@@ -17,14 +20,22 @@
     <tbody>
         @foreach (var line in Model.Cart.Lines)
         {
-            <tr>
-                <td class="text-center">@line.Quantity</td>
-                <td class="text-left">@line.Film.Name</td>
-                <td class="text-right">@line.Film.Price.ToString("#.## руб")</td>
-                <td class="text-right">
-                    @((line.Quantity * line.Film.Price).ToString("#.## руб"))
-                </td>
-            </tr>
+        <tr>
+            <td class="text-center">@line.Quantity</td>
+            <td class="text-left">@line.Film.Name</td>
+            <td class="text-right">@line.Film.Price.ToString("#.## руб")</td>
+            <td class="text-right">
+                @((line.Quantity * line.Film.Price).ToString("#.## руб"))
+            </td>
+            <td>
+                @using (Html.BeginForm("RemoveFromCart", "Cart"))
+                {
+                    @Html.Hidden("FilmId", line.Film.FilmId)
+                    @Html.HiddenFor(x => x.ReturnUrl)
+                    <input class="btn btn-sm btn-warning" type="submit" value="Удалить" />
+                }
+            </td>
+        </tr>
         }
     </tbody>
     <tfoot>
