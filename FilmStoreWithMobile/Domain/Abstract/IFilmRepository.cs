@@ -10,5 +10,6 @@ namespace Domain.Abstract
     public interface IFilmRepository
     {
         IEnumerable<Film> Films { get; }
+        void SaveFilm(Film film);
     }
 }
