@@ -7,7 +7,8 @@ using Ninject;
 using Domain.Entities;
 using Domain.Abstract;
 using Domain.Concrete;
-
+using WebUI.Infrastructure.Abstract;
+using WebUI.Infrastructure.Concrete;
 
 namespace GameStore.WebUI.Infrastructure
 {
@@ -42,6 +43,7 @@ namespace GameStore.WebUI.Infrastructure
 
             kernel.Bind<IOrderProcessor>().To<EmailOrderProcessor>()
                 .WithConstructorArgument("settings", emailSettings);
+            kernel.Bind<IAuthProvider>().To<FormAuthProvider>();
         }
     }
 }

@@ -39,5 +39,19 @@ namespace WebUI.Controllers
             };
             return View(model);
         }
+        public FileContentResult GetImage(int filmId)
+        {
+            Film film = repository.Films
+                .FirstOrDefault(g => g.FilmId == filmId);
+
+            if (film != null)
+            {
+                return File(film.ImageData, film.ImageMimeType);
+            }
+            else
+            {
+                return null;
+            }
+        }
     }
 }

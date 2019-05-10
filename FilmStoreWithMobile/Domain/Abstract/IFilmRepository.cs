@@ -11,5 +11,6 @@ namespace Domain.Abstract
     {
         IEnumerable<Film> Films { get; }
         void SaveFilm(Film film);
+        Film DeleteFilm(int filmId);
     }
 }

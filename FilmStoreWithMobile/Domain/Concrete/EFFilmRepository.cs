@@ -29,9 +29,21 @@ namespace Domain.Concrete
                     dbEntry.Description = film.Description;
                     dbEntry.Price = film.Price;
                     dbEntry.Genre = film.Genre;
+                    dbEntry.ImageData = film.ImageData;
+                    dbEntry.ImageMimeType = film.ImageMimeType;
                 }
             }
             context.SaveChanges();
+        }
+        public Film DeleteFilm(int filmId)
+        {
+            Film dbEntry = context.Films.Find(filmId);
+            if (dbEntry != null)
+            {
+                context.Films.Remove(dbEntry);
+                context.SaveChanges();
+            }
+            return dbEntry;
         }
     }
 }

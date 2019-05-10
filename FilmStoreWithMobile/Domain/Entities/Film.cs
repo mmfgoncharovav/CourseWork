@@ -22,14 +22,17 @@ namespace Domain.Entities
         [Required(ErrorMessage = "Пожалуйста, введите описание для фильма")]
         public string Description { get; set; }
 
-        [Display(Name = "Категория")]
-        [Required(ErrorMessage = "Пожалуйста, укажите категорию для фильма")]
+        [Display(Name = "Жанр")]
+        [Required(ErrorMessage = "Пожалуйста, укажите жанр фильма")]
         public string Genre { get; set; }
 
         [Display(Name = "Цена (руб)")]
         [Required]
         [Range(0.01, double.MaxValue, ErrorMessage = "Пожалуйста, введите положительное значение для цены фильма")]
         public decimal Price { get; set; }
+
+        public byte[] ImageData { get; set; }
+        public string ImageMimeType { get; set; }
 
 
     }
