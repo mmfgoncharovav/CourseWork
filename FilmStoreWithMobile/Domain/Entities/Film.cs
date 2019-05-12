@@ -10,6 +10,7 @@ namespace Domain.Entities
 {
     public class Film
     {
+
         [HiddenInput(DisplayValue = false)]
         public int FilmId { get; set; }
 

@@ -1,0 +1,16 @@
+X-Sender: kinoman@example.com
+X-Receiver: orders@example.com
+MIME-Version: 1.0
+From: kinoman@example.com
+To: orders@example.com
+Date: 13 May 2019 00:01:16 +0300
+Subject: =?utf-8?B?0J3QvtCy0YvQuSDQt9Cw0LrQsNC3INC+0YLQv9GA0LDQstC7?=
+ =?utf-8?B?0LXQvSE=?=
+Content-Type: text/plain; charset=utf-8
+Content-Transfer-Encoding: base64
+
+0J3QvtCy0YvQuSDQt9Cw0LrQsNC3INC+0LHRgNCw0LHQvtGC0LDQvQ0KLS0tDQrQotC+
+0LLQsNGA0Ys6DQoxIHgg0J3QsNGH0LDQu9C+ICjQuNGC0L7Qs9C+OiAyNCw5MSBCctCe
+0LHRidCw0Y8g0YHRgtC+0LjQvNC+0YHRgtGMOiAyNCw5MSBCci0tLQ0K0JTQvtGB0YLQ
+sNCy0LrQsDoNCjUyDQo1MzINCjUzMg0KNTIzDQotLS0NCtCf0L7QtNCw0YDQvtGH0L3Q
+sNGPINGD0L/QsNC60L7QstC60LA6INCd0LXRgg==

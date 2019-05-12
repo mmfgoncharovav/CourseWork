@@ -61,17 +61,16 @@ namespace Domain.Concrete
                 foreach (var line in cart.Lines)
                 {
                     var subtotal = line.Film.Price * line.Quantity;
-                    body.AppendFormat("{0} x {1} (итого: {2:c}",
+                    body.AppendFormat("{0} x {1} (итого: {2:c})",
                         line.Quantity, line.Film.Name, subtotal);
                 }
 
                 body.AppendFormat("Общая стоимость: {0:c}", cart.ComputeTotalValue())
+                    .AppendLine(" ")
                     .AppendLine("---")
                     .AppendLine("Доставка:")
                     .AppendLine(shippingInfo.Name)
                     .AppendLine(shippingInfo.Line1)
-                    .AppendLine(shippingInfo.Line2 ?? "")
-                    .AppendLine(shippingInfo.Line3 ?? "")
                     .AppendLine(shippingInfo.City)
                     .AppendLine(shippingInfo.Country)
                     .AppendLine("---")
