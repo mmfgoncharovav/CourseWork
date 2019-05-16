@@ -52,7 +52,7 @@ namespace Domain.Concrete
                     smtpClient.PickupDirectoryLocation = emailSettings.FileLocation;
                     smtpClient.EnableSsl = false;
                 }
-
+             
                 StringBuilder body = new StringBuilder()
                     .AppendLine("Новый заказ обработан")
                     .AppendLine("---")
