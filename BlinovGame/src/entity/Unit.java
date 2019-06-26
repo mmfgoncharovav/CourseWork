@@ -7,17 +7,27 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
 
-public class Unit implements Component {
+public class Unit implements Component, Cloneable {
 
     private static final Logger LOGGER = LogManager.getLogger(Unit.class);
     private String name;
     private int healthPoints;
     private int attackPower;
-    private boolean isDead;
-    public Unit(String name,int healthPoints, int attackPower ) {
+    private int defence;
+    public Unit(String name,int healthPoints, int attackPower, int defence ) {
         this.name = name;
         this.healthPoints = healthPoints;
         this.attackPower = attackPower;
+        this.defence = defence;
+    }
+    public Unit clone() {
+        Unit unit;
+        try {
+            unit =(Unit) super.clone();
+        } catch (CloneNotSupportedException e) {
+            throw new RuntimeException();
+        }
+        return unit;
     }
     public void add(Component component) {
     }
@@ -57,24 +67,28 @@ public class Unit implements Component {
             aboveTemp = component;
             component = component.getChildren().get(0);
         }
-        Unit unit = (Unit) component;
-        LOGGER.info(this + "attacks " + unit);
-        unit.healthPoints = unit.healthPoints - this.attackPower;
-        if (unit.healthPoints <= 0) {
-            LOGGER.info(unit + " got killed ");
-            aboveTemp.remove(component);
-            aboveTemp.clean();
+        if(component.getClass()==Unit.class) {
+            Unit unit = (Unit) component;
+            LOGGER.info(this + "attacks " + unit);
+            int damage = this.attackPower - unit.defence;
+            if (damage < 0) {
+                damage = 0;
+            }
+            unit.healthPoints = unit.healthPoints - damage;
+            if (unit.healthPoints <= 0) {
+                LOGGER.info(unit + " got killed ");
+                aboveTemp.remove(component);
+                aboveTemp.clean();
+            }
         }
     }
 
-
-
-    public boolean isDead() {
-        return isDead;
+    public int getDefence() {
+        return defence;
     }
 
-    public void setDead(boolean dead) {
-        isDead = dead;
+    public void setDefence(int defence) {
+        this.defence = defence;
     }
 
     @Override
@@ -84,12 +98,13 @@ public class Unit implements Component {
         Unit unit = (Unit) o;
         return healthPoints == unit.healthPoints &&
                 attackPower == unit.attackPower &&
+                defence == unit.defence &&
                 name.equals(unit.name);
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, healthPoints, attackPower);
+        return Objects.hash(name, healthPoints, attackPower, defence);
     }
 
     @Override
@@ -98,6 +113,7 @@ public class Unit implements Component {
                 "name='" + name + '\'' +
                 ", healthPoints=" + healthPoints +
                 ", attackPower=" + attackPower +
+                ", defence=" + defence +
                 '}';
     }
 }

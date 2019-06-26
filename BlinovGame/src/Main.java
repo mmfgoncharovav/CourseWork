@@ -1,32 +1,29 @@
+import action.Play;
 import entity.Component;
 import entity.Composite;
+import entity.Player;
 import entity.Unit;
 
 public class Main {
 
     public static void main(String[] args) {
-       Unit unit1 = new Unit("Orc1",100,10);
-       Unit unit2 = new Unit("Orc2",200,10);
-       Unit dUnit1 = new Unit("Elf1",10,5);
-       Unit dUnit2 = new Unit("Elf2",10,3);
-       Unit dUnit3 = new Unit("Elf2",10,3);
-       Component squad1 = new Composite();
-       squad1.add(unit1);
-       squad1.add(unit2);
-       Component squad2 = new Composite();
-       Component squad3 = new Composite();
-       squad2.add(dUnit1);
-       squad3.add(dUnit2);
-       squad3.add(dUnit3);
-       Component army1 = new Composite();
-       army1.add(squad1);
-       Component army2 = new Composite();
-       army2.add(squad2);
-       army2.add(squad3);
+        Unit orc1 = new Unit("Uruk",100,20,5);
+        Unit orc2 = new Unit("Tarrok",250,30,5);
+        Unit human1 = new Unit("Alexandr",50,10,0);
+        Unit human2 = new Unit("Oleg",10,1,0);
+        Composite orcSquad = new Composite();
+        orcSquad.add(orc1);
+        orcSquad.add(orc2);
+        Composite orcArmy = new Composite();
+        orcArmy.add(orcSquad);
+        Composite humanSquad = new Composite();
+        humanSquad.add(human1);
+        humanSquad.add(human2);
+        Composite humanArmy = new Composite();
+        humanArmy.add(humanSquad);
+        Player first = new Player("Alexandr",humanArmy);
+        Player second = new Player("Egor", orcArmy);
+        Play.play(first,second);
 
-       Component megaArmy1 = new Composite();
-       megaArmy1.add(army2);
-       army1.attack(megaArmy1);
-       System.out.println(army2);
     }
 }

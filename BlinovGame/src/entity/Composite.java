@@ -1,11 +1,14 @@
 package entity;
 
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
 public class Composite implements Component {
+    private static final Logger LOGGER = LogManager.getLogger(Composite.class);
     private List<Component> components;
     public Composite() {
         components = new ArrayList<>();
@@ -17,12 +20,14 @@ public class Composite implements Component {
         return components;
     }
     public void attack(Component component) {
-        for (Component comp:components) {
-            component.clean();
-            comp.attack(component);
-        }
+        for (Component comp : components) {
+            if (!component.getChildren().isEmpty()&&component.getClass()!=Unit.class) {
+                component.clean();
+            }
+                comp.attack(component);
+            }
         component.clean();
-    }
+        }
     public void remove(Component component) {
         this.components.remove(component);
     }
@@ -50,6 +55,7 @@ public class Composite implements Component {
 
     @Override
     public String toString() {
+        this.clean();
         return components.toString();
     }
 }
