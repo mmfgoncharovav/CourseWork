@@ -12,3 +12,23 @@
 16:10:15.650 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
 16:10:15.650 [main] INFO  entity.Unit - Unit{name='Orc2', healthPoints=200, attackPower=10}attacks Unit{name='Elf2', healthPoints=10, attackPower=3}
 16:10:15.650 [main] INFO  entity.Unit - Unit{name='Elf2', healthPoints=0, attackPower=3} got killed 
+16:21:27.084 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:21:27.099 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:21:27.099 [main] INFO  entity.Unit - Unit{name='Orc2', healthPoints=200, attackPower=10}attacks Unit{name='Elf2', healthPoints=10, attackPower=3}
+16:21:27.099 [main] INFO  entity.Unit - Unit{name='Elf2', healthPoints=0, attackPower=3} got killed 
+16:21:47.454 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:21:47.470 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:21:47.470 [main] INFO  entity.Unit - Unit{name='Orc2', healthPoints=200, attackPower=10}attacks Unit{name='Elf2', healthPoints=10, attackPower=3}
+16:21:47.470 [main] INFO  entity.Unit - Unit{name='Elf2', healthPoints=0, attackPower=3} got killed 
+16:23:31.024 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:23:31.024 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:24:51.036 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:24:54.036 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:25:55.241 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:25:55.256 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:26:09.331 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:26:09.331 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:27:20.658 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:27:23.657 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 
+16:29:08.714 [main] INFO  entity.Unit - Unit{name='Orc1', healthPoints=100, attackPower=10}attacks Unit{name='Elf1', healthPoints=10, attackPower=5}
+16:29:16.760 [main] INFO  entity.Unit - Unit{name='Elf1', healthPoints=0, attackPower=5} got killed 

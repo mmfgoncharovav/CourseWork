@@ -50,11 +50,14 @@ public class Unit implements Component {
     }
     public void remove(Component component) { }
     public void attack(Component comp) {
+        Component aboveTemp = comp;
         Component component = comp;
         if (component.getChildren().isEmpty()) {
+             aboveTemp = component;
             component = component.getChildren().get(0);
         }
         while (!component.getChildren().isEmpty()) {
+             aboveTemp = component;
             component = component.getChildren().get(0);
         }
         Unit unit = (Unit) component;
@@ -62,7 +65,7 @@ public class Unit implements Component {
         unit.healthPoints = unit.healthPoints - this.attackPower;
         if (unit.healthPoints <= 0) {
             LOGGER.info(unit + " got killed ");
-            comp.remove(component);
+            aboveTemp.remove(component);
         }
     }
 

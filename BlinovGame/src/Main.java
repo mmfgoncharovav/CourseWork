@@ -13,13 +13,15 @@ public class Main {
        squad1.add(unit1);
        squad1.add(unit2);
        Component squad2 = new Composite();
+       Component squad3 = new Composite();
        squad2.add(dUnit1);
-       squad2.add(dUnit2);
+       squad3.add(dUnit2);
        Component army1 = new Composite();
        army1.add(squad1);
        Component army2 = new Composite();
        army2.add(squad2);
-       army1.attack(squad2);
-       System.out.println(squad2);
+       army2.add(squad3);
+       army1.attack(army2);
+       System.out.println(army2);
     }
 }
