@@ -21,8 +21,7 @@ namespace Domain.Concrete
         public string ServerName = "smtp.example.com";
         public int ServerPort = 587;
         public bool WriteAsFile = true;
-       // public string FileLocation = @"c:\kinoman_emails";
-        public string FileLocation = @"C:\Users\Александр\source\repos\FilmStore\emails";
+        public string FileLocation = @"C:\CourseWorkDone\CourseWork\FilmStoreWithMobile\emails";
     }
 
     public class EmailOrderProcessor : IOrderProcessor
@@ -70,6 +69,7 @@ namespace Domain.Concrete
                     .AppendLine("---")
                     .AppendLine("Доставка:")
                     .AppendLine(shippingInfo.Name)
+                    .AppendLine(shippingInfo.PhoneNumber)
                     .AppendLine(shippingInfo.Line1)
                     .AppendLine(shippingInfo.City)
                     .AppendLine(shippingInfo.Country)

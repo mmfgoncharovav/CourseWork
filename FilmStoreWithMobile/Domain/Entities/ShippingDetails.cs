@@ -12,6 +12,11 @@ namespace Domain.Entities
         [Required(ErrorMessage = "Укажите как вас зовут")]
         public string Name { get; set; }
         
+        [Required(ErrorMessage = "Укажите телефон для связи")]
+        [Display(Name="Телефон для связи (в формате, например 37529 709 5757)")]
+        [DataType(DataType.PhoneNumber)]
+        [RegularExpression(@"^\(?([0-9]{5})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$", ErrorMessage = "Entered phone format is not valid.")]
+        public string PhoneNumber { get; set; }
 
         [Required(ErrorMessage = "Укажите адрес доставки")]
         [Display(Name = "Адрес")]
