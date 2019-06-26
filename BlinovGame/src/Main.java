@@ -23,7 +23,7 @@ public class Main {
        army2.add(squad3);
        Component megaArmy1 = new Composite();
        megaArmy1.add(army2);
-       army1.attack(army2);
+       army1.attack(megaArmy1);
        System.out.println(army2);
     }
 }

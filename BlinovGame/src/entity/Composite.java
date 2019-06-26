@@ -1,6 +1,7 @@
 package entity;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 import java.util.Objects;
 
@@ -25,12 +26,12 @@ public class Composite implements Component {
         this.components.remove(component);
     }
     public void clean() {
-        for (Component comp:
-             components) {
-            if(comp.getChildren().isEmpty()) {
-                components.remove(comp);
+        for (int i = 0; i < components.size(); i++) {
+            if (components.get(i).getChildren().isEmpty()&&components.get(i).getClass()!=Unit.class) {
+                components.remove(components.get(i));
+            } else {
+                components.get(i).clean();
             }
-
         }
     }
     @Override

@@ -53,12 +53,8 @@ public class Unit implements Component {
     public void attack(Component comp) {
         Component aboveTemp = comp;
         Component component = comp;
-        if (component.getChildren().isEmpty()) {
-             aboveTemp = component;
-            component = component.getChildren().get(0);
-        }
-        while (!component.getChildren().isEmpty()) {
-             aboveTemp = component;
+        while (!component.getChildren().isEmpty()&&component.getClass()!=Unit.class) {
+            aboveTemp = component;
             component = component.getChildren().get(0);
         }
         Unit unit = (Unit) component;
@@ -67,6 +63,7 @@ public class Unit implements Component {
         if (unit.healthPoints <= 0) {
             LOGGER.info(unit + " got killed ");
             aboveTemp.remove(component);
+            aboveTemp.clean();
         }
     }
 
