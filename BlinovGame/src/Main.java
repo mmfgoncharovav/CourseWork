@@ -12,10 +12,12 @@ public class Main {
         Unit human1 = new Unit("Alexandr",50,10,0);
         Unit human2 = new Unit("Oleg",10,1,0);
         Composite orcSquad = new Composite();
+        Composite orcSquad2 = new Composite();
         orcSquad.add(orc1);
-        orcSquad.add(orc2);
+        orcSquad2.add(orc2);
         Composite orcArmy = new Composite();
         orcArmy.add(orcSquad);
+        orcArmy.add(orcSquad2);
         Composite humanSquad = new Composite();
         humanSquad.add(human1);
         humanSquad.add(human2);

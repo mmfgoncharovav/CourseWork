@@ -18,7 +18,6 @@ public class Player {
         Component squad = army.getChildren().get(indexOfAttacker);
         Component opponentsSquad = opponentsArmy.getChildren().get(indexToBeAttacked);
         squad.attack(opponentsSquad);
-        army.clean();
         opponentsArmy.clean();
     }
 
