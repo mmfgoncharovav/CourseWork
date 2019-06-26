@@ -7,4 +7,5 @@ public interface Component  {
     List<Component> getChildren();
     void remove(Component component);
     void attack(Component component);
+    void clean();
 }

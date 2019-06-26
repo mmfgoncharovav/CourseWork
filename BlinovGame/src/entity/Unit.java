@@ -49,6 +49,7 @@ public class Unit implements Component {
         this.healthPoints = healthPoints;
     }
     public void remove(Component component) { }
+    public void clean() { }
     public void attack(Component comp) {
         Component aboveTemp = comp;
         Component component = comp;

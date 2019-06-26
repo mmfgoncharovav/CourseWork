@@ -17,28 +17,21 @@ public class Composite implements Component {
     }
     public void attack(Component component) {
         for (Component comp:components) {
+            component.clean();
             comp.attack(component);
         }
     }
-//    public void attack(Component component) {
-//        ArrayList<Unit> attackingSquad = new ArrayList<>();
-//        ArrayList<Unit> defendingSquad = new ArrayList<>();
-//        for (Component comp:components ) {
-//            attackingSquad.add((Unit)comp);
-//        }
-//        for( Component comp:component.getChildren()) {
-//            defendingSquad.add((Unit)comp);
-//        }
-//        for (Unit unit:attackingSquad) {
-//            unit.attack(defendingSquad.get(0));
-//            if(defendingSquad.get(0).getHealthPoints()<=0) {
-//                component.remove((Component)defendingSquad.get(0));
-//                defendingSquad.remove(0);
-//            }
-//        }
-//    }
     public void remove(Component component) {
         this.components.remove(component);
+    }
+    public void clean() {
+        for (Component comp:
+             components) {
+            if(comp.getChildren().isEmpty()) {
+                components.remove(comp);
+            }
+
+        }
     }
     @Override
     public boolean equals(Object o) {

@@ -21,6 +21,8 @@ public class Main {
        Component army2 = new Composite();
        army2.add(squad2);
        army2.add(squad3);
+       Component megaArmy1 = new Composite();
+       megaArmy1.add(army2);
        army1.attack(army2);
        System.out.println(army2);
     }
