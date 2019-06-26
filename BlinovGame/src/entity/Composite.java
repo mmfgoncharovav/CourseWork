@@ -21,6 +21,7 @@ public class Composite implements Component {
             component.clean();
             comp.attack(component);
         }
+        component.clean();
     }
     public void remove(Component component) {
         this.components.remove(component);
