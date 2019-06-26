@@ -1,7 +1,7 @@
 package test.entity;
 
-import entity.Composite;
-import entity.Unit;
+import by.bsu.game.entity.Composite;
+import by.bsu.game.entity.Unit;
 import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;

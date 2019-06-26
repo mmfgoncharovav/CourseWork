@@ -1,79 +1,80 @@
-20:37:38.837 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-20:37:38.837 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:37:38.837 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-20:37:38.837 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
-20:37:38.837 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed 
-20:37:38.852 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:37:38.852 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-20:37:38.852 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed 
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed 
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-20:40:10.855 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed 
-20:41:46.616 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-20:41:46.616 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:41:46.616 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-20:41:46.616 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
-20:41:46.631 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed 
-20:41:46.631 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:41:46.631 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-20:41:46.631 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed 
-20:42:18.565 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed 
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-20:42:18.581 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed 
-20:56:27.367 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-20:56:27.414 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-20:58:05.611 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
-20:58:05.611 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
-20:59:56.332 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
-20:59:56.332 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
-21:00:10.847 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-21:00:14.599 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
-21:00:14.599 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}
-21:00:20.009 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}
-21:00:20.009 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=-10, attackPower=10, defence=0} got killed 
-21:00:26.159 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}
-21:00:29.955 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-21:00:29.955 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed 
-21:09:05.015 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-21:09:05.015 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
-21:09:27.941 [main] INFO  entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-21:09:27.941 [main] INFO  entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
-21:09:36.296 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=40, attackPower=20, defence=5}
-21:09:36.296 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=25, attackPower=20, defence=5}
-21:09:36.296 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=-20, attackPower=20, defence=5} got killed 
-21:10:04.801 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-21:10:04.801 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
-21:10:07.659 [main] INFO  entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-21:10:07.659 [main] INFO  entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
-21:10:12.039 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=40, attackPower=20, defence=5}
-21:10:12.039 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=25, attackPower=20, defence=5}
-21:10:12.039 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=-20, attackPower=20, defence=5} got killed 
-21:10:18.699 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}
-21:10:18.699 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=-10, attackPower=10, defence=0} got killed 
-21:10:28.975 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
-21:10:28.975 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Tarrok', healthPoints=235, attackPower=30, defence=5}
-21:10:35.350 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=190, attackPower=30, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
-21:10:35.350 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=-20, attackPower=1, defence=0} got killed 
-21:11:55.578 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}
-21:11:55.578 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Undead', healthPoints=979, attackPower=10, defence=0}
-21:18:34.702 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-21:18:34.702 [main] INFO  entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
-21:19:55.677 [main] INFO  entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-21:19:55.677 [main] INFO  entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
-21:34:27.088 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
-21:34:27.119 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
-21:35:05.811 [main] INFO  entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}
-21:35:05.811 [main] INFO  entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Undead', healthPoints=979, attackPower=10, defence=0}
-21:35:11.279 [main] INFO  entity.Unit - Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
-21:35:11.279 [main] INFO  entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
-21:35:11.279 [main] INFO  entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed 
+20:37:38.837 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+20:37:38.837 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:37:38.837 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+20:37:38.837 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
+20:37:38.837 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed
+20:37:38.852 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:37:38.852 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+20:37:38.852 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+20:40:10.855 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed
+20:41:46.616 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+20:41:46.616 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:41:46.616 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+20:41:46.616 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
+20:41:46.631 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed
+20:41:46.631 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:41:46.631 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+20:41:46.631 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed
+20:42:18.565 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+20:42:18.581 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed
+20:56:27.367 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+20:56:27.414 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+20:58:05.611 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
+20:58:05.611 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
+20:59:56.332 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
+20:59:56.332 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
+21:00:10.847 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+21:00:14.599 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}attacks Unit{name='Tarrok', healthPoints=245, attackPower=30, defence=5}
+21:00:14.599 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}
+21:00:20.009 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}
+21:00:20.009 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=-10, attackPower=10, defence=0} got killed
+21:00:26.159 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Tarrok', healthPoints=240, attackPower=30, defence=5}
+21:00:29.955 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+21:00:29.955 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-10, attackPower=1, defence=0} got killed
+21:09:05.015 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+21:09:05.015 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
+21:09:27.941 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+21:09:27.941 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
+21:09:36.296 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=40, attackPower=20, defence=5}
+21:09:36.296 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=25, attackPower=20, defence=5}
+21:09:36.296 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=-20, attackPower=20, defence=5} got killed
+21:10:04.801 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+21:10:04.801 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
+21:10:07.659 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+21:10:07.659 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
+21:10:12.039 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=40, attackPower=20, defence=5}
+21:10:12.039 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=25, attackPower=20, defence=5}
+21:10:12.039 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=-20, attackPower=20, defence=5} got killed
+21:10:18.699 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=20, attackPower=10, defence=0}
+21:10:18.699 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=-10, attackPower=10, defence=0} got killed
+21:10:28.975 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}
+21:10:28.975 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Tarrok', healthPoints=235, attackPower=30, defence=5}
+21:10:35.350 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=190, attackPower=30, defence=5}attacks Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}
+21:10:35.350 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=-20, attackPower=1, defence=0} got killed
+21:11:55.578 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}
+21:11:55.578 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Undead', healthPoints=979, attackPower=10, defence=0}
+21:18:34.702 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+21:18:34.702 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Oleg', healthPoints=10, attackPower=1, defence=0}attacks Unit{name='Uruk', healthPoints=95, attackPower=20, defence=5}
+21:19:55.677 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+21:19:55.677 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Valera', healthPoints=500, attackPower=20, defence=0}attacks Unit{name='Alexandr', healthPoints=40, attackPower=10, defence=0}
+21:34:27.088 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}
+21:34:27.119 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Uruk', healthPoints=85, attackPower=20, defence=5}
+21:35:05.811 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Dobel', healthPoints=200, attackPower=20, defence=10}attacks Unit{name='Undead', healthPoints=999, attackPower=10, defence=0}
+21:35:05.811 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Elza', healthPoints=400, attackPower=50, defence=20}attacks Unit{name='Undead', healthPoints=979, attackPower=10, defence=0}
+21:35:11.279 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Uruk', healthPoints=100, attackPower=20, defence=5}attacks Unit{name='Alexandr', healthPoints=50, attackPower=10, defence=0}
+21:35:11.279 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Tarrok', healthPoints=250, attackPower=30, defence=5}attacks Unit{name='Alexandr', healthPoints=30, attackPower=10, defence=0}
+21:35:11.279 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Alexandr', healthPoints=0, attackPower=10, defence=0} got killed
+01:10:58.863 [main] INFO  by.bsu.game.entity.Unit - Unit{name='Undead', healthPoints=999, attackPower=10, defence=0, price=250}attacks Unit{name='Undead', healthPoints=999, attackPower=10, defence=0, price=250}
