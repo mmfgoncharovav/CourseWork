@@ -18,12 +18,14 @@ public class PlayRunner {
             int indexToBeAttacked = InputNumber.inputNumber(secondPlayer.getArmy().getChildren().size());
             firstPlayer.attack(indexOfAttacker,indexToBeAttacked);
 
-            System.out.println("\nSecond player move: \n");
-            PrintArmy.printArmy(secondPlayer.getArmy());
-            indexOfAttacker = InputNumber.inputNumber(secondPlayer.getArmy().getChildren().size());
-            PrintArmy.printArmy(firstPlayer.getArmy());
-            indexToBeAttacked = InputNumber.inputNumber(firstPlayer.getArmy().getChildren().size());
-            secondPlayer.attack(indexOfAttacker,indexToBeAttacked);
+            if(!secondPlayer.getArmy().getChildren().isEmpty()) {
+                System.out.println("\nSecond player move: \n");
+                PrintArmy.printArmy(secondPlayer.getArmy());
+                indexOfAttacker = InputNumber.inputNumber(secondPlayer.getArmy().getChildren().size());
+                PrintArmy.printArmy(firstPlayer.getArmy());
+                indexToBeAttacked = InputNumber.inputNumber(firstPlayer.getArmy().getChildren().size());
+                secondPlayer.attack(indexOfAttacker, indexToBeAttacked);
+            }
         }
         if(firstPlayer.getArmy().getChildren().isEmpty()) {
             System.out.println("Player " + secondPlayer.getName() + " won");

@@ -15,6 +15,7 @@ public class Unit implements Component, Cloneable {
     private int attackPower;
     private int defence;
     private int price;
+    private UnitType unitType;
 
     public Unit(String name, int healthPoints, int attackPower, int defence ) {
         this.name = name;
@@ -23,13 +24,15 @@ public class Unit implements Component, Cloneable {
         this.defence = defence;
     }
 
-    public Unit(String name, int healthPoints, int attackPower, int defence, int price) {
+    public Unit(String name, int healthPoints, int attackPower, int defence, int price, UnitType unitType) {
         this.name = name;
         this.healthPoints = healthPoints;
         this.attackPower = attackPower;
         this.defence = defence;
         this.price = price;
+        this.unitType = unitType;
     }
+
 
     public Unit clone() {
         Unit unit;
@@ -110,6 +113,17 @@ public class Unit implements Component, Cloneable {
     public void setPrice(int price) {
         this.price = price;
     }
+
+
+
+    public UnitType getUnitType() {
+        return unitType;
+    }
+
+    public void setUnitType(UnitType unitType) {
+        this.unitType = unitType;
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -118,12 +132,13 @@ public class Unit implements Component, Cloneable {
         return healthPoints == unit.healthPoints &&
                 attackPower == unit.attackPower &&
                 defence == unit.defence &&
-                name.equals(unit.name);
+                name.equals(unit.name) &&
+                unitType == unit.unitType;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(name, healthPoints, attackPower, defence);
+        return Objects.hash(name, healthPoints, attackPower, defence, unitType);
     }
 
     @Override
@@ -134,6 +149,7 @@ public class Unit implements Component, Cloneable {
                 ", attackPower=" + attackPower +
                 ", defence=" + defence +
                 ", price=" + price +
+                ", unitType=" + unitType +
                 '}';
     }
 }

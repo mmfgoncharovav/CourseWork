@@ -10,6 +10,11 @@ public class TeamEditor {
         int count = UnitsForSale.getInstance().getUnitList().size();
         while(true) {
             System.out.println(player.getName()+ " " + player.getGold());
+            System.out.println("Current army: ");
+            for(int i = 0 ; i < army.getChildren().size(); i++) {
+                System.out.println(army.getChildren().get(i));
+            }
+            System.out.println("Unit offers: ");
             for (int i = 0; i < count; i++) {
                 System.out.println(i + " ------- " + UnitsForSale.getInstance().getUnitList().get(i));
             }
@@ -18,12 +23,27 @@ public class TeamEditor {
             if(choice==count) {
                 break;
             }
-            Composite squad = new Composite();
             Component unitToBeAdded = UnitsForSale.getInstance().getUnitList().get(choice);
-            squad.add(unitToBeAdded);
-            army.add(squad);
             Unit unit = (Unit) unitToBeAdded;
-            player.setGold(player.getGold()-unit.getPrice());
+            if(player.getGold()-unit.getPrice()>=0) {
+                boolean isAdded = false;
+                for (Component comp:
+                     army.getChildren()) {
+                    Unit toBeCompared = (Unit) comp.getChildren().get(0);
+                    if (unit.getUnitType() == toBeCompared.getUnitType()) {
+                        comp.add(unit);
+                        isAdded = true;
+                    }
+                }
+                if(isAdded == false) {
+                    Composite squad = new Composite();
+                    squad.add(unit);
+                    army.add(squad);
+                }
+                player.setGold(player.getGold() - unit.getPrice());
+            } else {
+                System.out.println("You are out of gold!");
+            }
 
 
 
