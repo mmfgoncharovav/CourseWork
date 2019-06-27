@@ -87,6 +87,7 @@ public class Unit implements Component, Cloneable {
         }
         if (component.getClass() == Unit.class) {
             Unit unit = (Unit) component;
+            System.out.println(this + "attacks " + unit);
             LOGGER.info(this + "attacks " + unit);
             int damage = this.attackPower - unit.defence;
             if (damage < 0) {
@@ -94,7 +95,8 @@ public class Unit implements Component, Cloneable {
             }
             unit.healthPoints = unit.healthPoints - damage;
             if (unit.healthPoints <= 0) {
-                LOGGER.info(unit + " got killed ");
+                System.out.println(unit + " got killed by " + this);
+                LOGGER.info(unit + " got killed by " + this);
                 aboveTemp.remove(component);
                 aboveTemp.clean();
             }
