@@ -8,14 +8,14 @@ import by.bsu.game.view.Menu;
 public class ManageTeam implements Command {
     public void execute() {
 
-        int playerNumber= ChoosePlayer.choosePlayer();
-        if(playerNumber == 1){
-            Menu.firstPlayer.setName(InputName.inputName());
-            TeamEditor.editTeam(Menu.firstPlayer);
+        int playerNumber = ChoosePlayer.choosePlayer();
+        if (playerNumber == 1) {
+            Menu.FIRST_PLAYER.setName(InputName.inputName());
+            TeamEditor.editTeam(Menu.FIRST_PLAYER);
         }
-        if(playerNumber == 2){
-            Menu.secondPlayer.setName(InputName.inputName());
-            TeamEditor.editTeam(Menu.secondPlayer);
+        if (playerNumber == 2) {
+            Menu.SECOND_PLAYER.setName(InputName.inputName());
+            TeamEditor.editTeam(Menu.SECOND_PLAYER);
         }
     }
 }

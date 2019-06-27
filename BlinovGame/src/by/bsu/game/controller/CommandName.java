@@ -9,7 +9,7 @@ public enum  CommandName {
      */
     MANAGE_TEAM,
     /**
-     PlayRunner
+     PlayRunner.
      **/
     PLAY
 

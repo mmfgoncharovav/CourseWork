@@ -1,7 +1,7 @@
 package by.bsu.game.entity;
 
 public class SquadException extends Exception {
-    public SquadException(String s) {
+    public SquadException(final String s) {
         super(s);
     }
 }

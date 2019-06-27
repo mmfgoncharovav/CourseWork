@@ -3,7 +3,7 @@ package by.bsu.game.entity;
 import java.util.ArrayList;
 import java.util.List;
 
-public class UnitsForSale {
+public final class UnitsForSale {
     private List<Component> unitList;
 
 
@@ -21,7 +21,7 @@ public class UnitsForSale {
         return unitList;
     }
 
-    public void setUnitList(List<Component> unitList) {
-        this.unitList = unitList;
+    public void setUnitList(final List<Component> newUnitList) {
+        this.unitList = newUnitList;
     }
 }

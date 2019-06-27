@@ -7,26 +7,28 @@ public class Player {
     private int gold;
     private Player opponent;
 
-    public Player(String name, Composite army) {
-        this.name = name;
-        this.army = army;
+    public Player(final String newName, final Composite newArmy) {
+        this.name = newName;
+        this.army = newArmy;
     }
 
     public Player() {
         this.gold = DEFAULT_GOLD;
     }
 
-    public Player(String name, Composite army, int gold) {
-        this.name = name;
-        this.army = army;
-        this.gold = gold;
+    public Player(final String newName,
+                  final Composite newArmy, final int newGold) {
+        this.name = newName;
+        this.army = newArmy;
+        this.gold = newGold;
     }
 
-    public void attack(int indexOfAttacker, int indexToBeAttacked) {
-        Composite army = this.army;
+    public void attack(final int indexOfAttacker, final int indexToBeAttacked) {
+        Composite attackingArmy = this.army;
         Composite opponentsArmy = opponent.army;
-        Component squad = army.getChildren().get(indexOfAttacker);
-        Component opponentsSquad = opponentsArmy.getChildren().get(indexToBeAttacked);
+        Component squad = attackingArmy.getChildren().get(indexOfAttacker);
+        Component opponentsSquad
+                = opponentsArmy.getChildren().get(indexToBeAttacked);
         squad.attack(opponentsSquad);
         opponentsArmy.clean();
     }
@@ -35,31 +37,31 @@ public class Player {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(final String newName) {
+        this.name = newName;
     }
 
     public Composite getArmy() {
         return army;
     }
 
-    public void setArmy(Composite army) {
-        this.army = army;
+    public void setArmy(final Composite newArmy) {
+        this.army = newArmy;
     }
 
     public Player getOpponent() {
         return opponent;
     }
 
-    public void setOpponent(Player opponent) {
-        this.opponent = opponent;
+    public void setOpponent(final Player newOpponent) {
+        this.opponent = newOpponent;
     }
 
     public int getGold() {
         return gold;
     }
 
-    public void setGold(int gold) {
-        this.gold = gold;
+    public void setGold(final int newGold) {
+        this.gold = newGold;
     }
 }

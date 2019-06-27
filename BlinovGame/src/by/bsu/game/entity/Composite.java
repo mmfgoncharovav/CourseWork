@@ -13,27 +13,29 @@ public class Composite implements Component {
     public Composite() {
         components = new ArrayList<>();
     }
-    public void add(Component component){
+    public void add(final Component component) {
         components.add(component);
     }
-    public List<Component> getChildren(){
+    public List<Component> getChildren() {
         return components;
     }
     public void attack(Component component) {
         for (Component comp : components) {
-            if (!component.getChildren().isEmpty()&&component.getClass()!=Unit.class) {
+            if (!component.getChildren().isEmpty()
+                    && component.getClass() != Unit.class) {
                 component.clean();
             }
                 comp.attack(component);
             }
         component.clean();
         }
-    public void remove(Component component) {
+    public void remove(final Component component) {
         this.components.remove(component);
     }
     public void clean() {
         for (int i = 0; i < components.size(); i++) {
-            if (components.get(i).getChildren().isEmpty()&&components.get(i).getClass()!=Unit.class) {
+            if (components.get(i).getChildren().isEmpty()
+                    && components.get(i).getClass() != Unit.class) {
                 components.remove(components.get(i));
             } else {
                 components.get(i).clean();
@@ -41,9 +43,13 @@ public class Composite implements Component {
         }
     }
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Composite composite = (Composite) o;
         return Objects.equals(components, composite.components);
     }
@@ -55,7 +61,6 @@ public class Composite implements Component {
 
     @Override
     public String toString() {
-        this.clean();
         return components.toString();
     }
 }

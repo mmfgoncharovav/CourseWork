@@ -3,7 +3,8 @@ package by.bsu.game.view;
 import java.util.InputMismatchException;
 import java.util.Scanner;
 
-public class ChoosePlayer {
+public final class ChoosePlayer {
+    private ChoosePlayer() { }
     public static int choosePlayer() {
             System.out.println("\n Choose a player to edit: ");
             System.out.println("1: First player ");

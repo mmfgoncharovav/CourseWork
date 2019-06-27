@@ -17,33 +17,36 @@ public class Unit implements Component, Cloneable {
     private int price;
     private UnitType unitType;
 
-    public Unit(String name, int healthPoints, int attackPower, int defence ) {
-        this.name = name;
-        this.healthPoints = healthPoints;
-        this.attackPower = attackPower;
-        this.defence = defence;
+    public Unit(final String newName, final int newHealthPoints,
+                final int newAttackPower, final int newDefence) {
+        this.name = newName;
+        this.healthPoints = newHealthPoints;
+        this.attackPower = newAttackPower;
+        this.defence = newDefence;
     }
 
-    public Unit(String name, int healthPoints, int attackPower, int defence, int price, UnitType unitType) {
-        this.name = name;
-        this.healthPoints = healthPoints;
-        this.attackPower = attackPower;
-        this.defence = defence;
-        this.price = price;
-        this.unitType = unitType;
+    public Unit(final String newName, final int newHealthPoints,
+                final int newAttackPower, final int newDefence,
+                final int newPrice, final UnitType newUnitType) {
+        this.name = newName;
+        this.healthPoints = newHealthPoints;
+        this.attackPower = newAttackPower;
+        this.defence = newDefence;
+        this.price = newPrice;
+        this.unitType = newUnitType;
     }
 
 
     public Unit clone() {
         Unit unit;
         try {
-            unit =(Unit) super.clone();
+            unit = (Unit) super.clone();
         } catch (CloneNotSupportedException e) {
             throw new RuntimeException();
         }
         return unit;
     }
-    public void add(Component component) {
+    public void add(final Component component) {
     }
     public List<Component> getChildren() {
         return new ArrayList<>();
@@ -53,35 +56,36 @@ public class Unit implements Component, Cloneable {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setName(final String newName) {
+        this.name = newName;
     }
 
     public int getAttackPower() {
         return attackPower;
     }
 
-    public void setAttackPower(int attackPower) {
-        this.attackPower = attackPower;
+    public void setAttackPower(final int newAttackPower) {
+        this.attackPower = newAttackPower;
     }
 
     public int getHealthPoints() {
         return healthPoints;
     }
 
-    public void setHealthPoints(int healthPoints) {
-        this.healthPoints = healthPoints;
+    public void setHealthPoints(final int newHealthPoints) {
+        this.healthPoints = newHealthPoints;
     }
-    public void remove(Component component) { }
+    public void remove(final Component component) { }
     public void clean() { }
-    public void attack(Component comp) {
+    public void attack(final Component comp) {
         Component aboveTemp = comp;
         Component component = comp;
-        while (!component.getChildren().isEmpty()&&component.getClass()!=Unit.class) {
+        while (!component.getChildren().isEmpty()
+                && component.getClass() != Unit.class) {
             aboveTemp = component;
             component = component.getChildren().get(0);
         }
-        if(component.getClass()==Unit.class) {
+        if (component.getClass() == Unit.class) {
             Unit unit = (Unit) component;
             LOGGER.info(this + "attacks " + unit);
             int damage = this.attackPower - unit.defence;
@@ -101,8 +105,8 @@ public class Unit implements Component, Cloneable {
         return defence;
     }
 
-    public void setDefence(int defence) {
-        this.defence = defence;
+    public void setDefence(final int newDefence) {
+        this.defence = newDefence;
     }
 
 
@@ -110,8 +114,8 @@ public class Unit implements Component, Cloneable {
         return price;
     }
 
-    public void setPrice(int price) {
-        this.price = price;
+    public void setPrice(final int newPrice) {
+        this.price = newPrice;
     }
 
 
@@ -120,20 +124,24 @@ public class Unit implements Component, Cloneable {
         return unitType;
     }
 
-    public void setUnitType(UnitType unitType) {
-        this.unitType = unitType;
+    public void setUnitType(final UnitType newUnitType) {
+        this.unitType = newUnitType;
     }
 
     @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+    public boolean equals(final Object o) {
+        if (this == o) {
+            return true;
+        }
+        if (o == null || getClass() != o.getClass()) {
+            return false;
+        }
         Unit unit = (Unit) o;
-        return healthPoints == unit.healthPoints &&
-                attackPower == unit.attackPower &&
-                defence == unit.defence &&
-                name.equals(unit.name) &&
-                unitType == unit.unitType;
+        return healthPoints == unit.healthPoints
+               && attackPower == unit.attackPower
+               && defence == unit.defence
+               && name.equals(unit.name)
+               && unitType == unit.unitType;
     }
 
     @Override
@@ -143,13 +151,13 @@ public class Unit implements Component, Cloneable {
 
     @Override
     public String toString() {
-        return "Unit{" +
-                "name='" + name + '\'' +
-                ", healthPoints=" + healthPoints +
-                ", attackPower=" + attackPower +
-                ", defence=" + defence +
-                ", price=" + price +
-                ", unitType=" + unitType +
-                '}';
+        return "Unit{"
+                + "name='" + name + '\''
+                + ", healthPoints=" + healthPoints
+                + ", attackPower=" + attackPower
+                + ", defence=" + defence
+                + ", price=" + price
+                +  ", unitType=" + unitType
+                + '}';
     }
 }
