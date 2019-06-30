@@ -1,0 +1,10 @@
+
+V
+squid:S106Z"9Replace this use of System.out or System.err by a logger.(¬­¡8Ò×Ç¹-
+¤squid:S1186N"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(´¤Ï…ùÿÿÿÿ8ı¤¯Ã¹-
+V
+squid:S106b"9Replace this use of System.out or System.err by a logger.(Ÿ²Òá8ÀÛÿÆ¹-
+squid:S11861"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(••@8ı¤¯Ã¹-
+vsquid:S2975("SRemove this "clone" implementation; use a copy constructor or copy factory instead.(Û³ûÿÿÿÿ8ı¤¯Ã¹-
+jsquid:S00112-"FDefine and throw a dedicated exception instead of using a generic one.(¯åÕøÿÿÿÿ8ı¤¯Ã¹-
+¤squid:S1186O"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(À¾‰İüÿÿÿÿ8®“Ó ¹-
